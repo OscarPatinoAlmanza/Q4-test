@@ -3,11 +3,12 @@
 }
 
 #q4Wrapper {
-  background-color: #2A3035;
+  background-color: #2a3035;
   font-family: "Roboto", sans-serif;
   color: white;
 }
-#q4Wrapper h1, #q4Wrapper h3 {
+#q4Wrapper h1,
+#q4Wrapper h3 {
   margin: 0;
 }
 #q4Wrapper h1 {
@@ -18,8 +19,9 @@
   line-height: 20px;
   text-transform: uppercase;
 }
-#q4Wrapper header, #q4Wrapper footer {
-  background-color: #22272B;
+#q4Wrapper header,
+#q4Wrapper footer {
+  background-color: #22272b;
 }
 #q4Wrapper header {
   padding: 20px;
@@ -48,17 +50,77 @@
   opacity: 0.5;
 }
 
+.layout {
+  background-color: #2c3034;
+}
+
 .layout_inner {
   max-width: 960px;
   margin: 0 auto;
   padding: 30px 20px;
+  display: table;
 }
+
 .layout_header {
   margin-bottom: 30px;
   text-align: center;
+  background-color: #24272a;
+  color: white;
+}
+
+.layout_title {
+  font-family: Arial;
+  padding: 1rem;
+}
+
+.layout_container {
+  display: inline-block;
 }
 
 /* Begin styling the report items here! */
 .reports {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
 
+@media only screen and (max-width: 768px) {
+  .reports {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.reports_docs {
+  background-color: #24272a;
+  text-align: center;
+  border-radius: 5%;
+}
+
+.reports_name {
+  color: white;
+}
+
+.reports_details {
+  color: #909192;
+}
+
+a {
+  font-size: 0.9rem;
+  font-family: Arial;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+
+h3:first-child {
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+h3:last-child {
+  margin-top: 0;
 }
